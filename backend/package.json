@@ -1,0 +1,11 @@
+{
+  "name": "unemployment-office-backend",
+  "version": "0.0.1",
+  "main": "index.js",
+  "repository": "git@git.tenforce.com:trapeze/unemployment-office-backend.git",
+  "author": "Arnaud S'Jongers <arnaud.sjongers@tenforce.com>",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.1"
+  }
+}

@@ -1,0 +1,6 @@
+[submodule "backend"]
+	path = backend
+	url = git@git.tenforce.com:trapeze/unemployment-office-backend.git
+[submodule "frontend"]
+	path = frontend
+	url = git@git.tenforce.com:trapeze/unemployment-office-frontend.git

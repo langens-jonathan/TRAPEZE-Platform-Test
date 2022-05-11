@@ -1,0 +1,28 @@
+defmodule Dispatcher do
+  use Matcher
+
+  define_accept_types [
+    html: [ "text/html", "application/xhtml+html" ],
+    json: [ "application/json", "application/vnd.api+json" ],
+  ]
+
+  @any %{}
+  @json %{ accept: %{ json: true } }
+  @html %{ accept: %{ html: true } }
+
+  match "/properties/*path", @json do
+    Proxy.forward conn, path, "http://resource/properties/"
+  end
+
+  match "/data-sources/*path", @json do
+    Proxy.forward conn, path, "http://resource/data-sources/"
+  end
+
+  match "/vocabulary-ingestor/*path" do
+    Proxy.forward conn, path, "http://vocabulary-ingestor:5000/"
+  end
+
+  match "_", %{ last_call: true } do
+    send_resp( conn, 200, "OK" )
+  end
+end

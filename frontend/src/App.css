@@ -1,0 +1,22 @@
+.active {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+
+/* clean this up with SASS @apply rule */
+#tabs .active {
+    /* text-sky-700 */
+    --tw-text-opacity: 1;
+    color: rgb(3 105 161 / var(--tw-text-opacity));
+
+    /* -mb-px  */
+    margin-bottom: -1px;
+
+    border-top-width: 1px; /* border-t */
+    border-left-width: 1px; /* border-l */
+    border-right-width: 1px; /* border-r */
+
+    border-top-left-radius: 0.25rem; /* 4px rounded-t */
+    border-top-right-radius: 0.25rem; /* 4px rounded-t */
+}

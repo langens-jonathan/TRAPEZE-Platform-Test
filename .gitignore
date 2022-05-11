@@ -1,0 +1,10 @@
+/data/virtuoso/dumps
+/data/virtuoso/toLoad
+/data/virtuoso/.data_loaded
+/data/virtuoso/.dba_pwd_set
+/data/virtuoso/clean-logs.sh
+/data/virtuoso/virtuoso-temp.db
+/data/virtuoso/virtuoso.db
+/data/virtuoso/virtuoso.log
+/data/virtuoso/virtuoso.pxa
+/data/virtuoso/virtuoso.trx
